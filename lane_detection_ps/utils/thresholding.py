@@ -43,7 +43,7 @@ def threshold(img, color=False, mag_dir_thresh=False):
     img = np.copy(img)
     
     # Convert to HLS color space and separate the V channel
-    hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS).astype(np.float)
+    hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS).astype(float)
     
     
     ## White Color
